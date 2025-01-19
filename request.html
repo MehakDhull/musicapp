@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-CA">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=500, initial-scale=1" />
+        <meta
+            name="description"
+            content=""
+        />
+        <meta name="author" content="Mehak Mehak " />
+
+        <title>VIBE FLOW</title>
+        <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+        <link rel="stylesheet" href="./css/water.css" />
+    </head>
+  <body>
+    <header>
+        <h1>VIBE FLOW</h1>
+        <p>Experience the Flow of Top Hits with VibeFlow</p> <hr><hr>
+      
+        <nav>
+          <a href="index.html">Main Page </a>
+        </nav>
+    </header>
+
+    <main>
+      <form id="new-artist-form" action="https://httpbin.org/post" method="POST">
+        
+        <label for="artist-name">Name of artist:</label>
+        <input type="text" id="artist-name" name="artist-name" required>
+
+        <label for="music-genre">Music Genre:</label>
+        <input list="genres" id="music-genre" name="genre" placeholder="Enter or select a genre">
+        <datalist id="genres">
+            <option value="Hip Hop">
+            <option value="Party">
+            <option value="SAD ">
+            <option value="Rock">
+        </datalist>
+          
+        <label for="social-urls">Social Media URLs:</label>
+        <div id="social-urls-wrapper">
+          <input type="url" name="social-urls" required>
+          <button type="button" id="add-social-url">Add Different  URL</button>
+        </div>
+
+        <label for="music-urls">Music URLs:</label>
+        <div id="music-urls-wrapper">
+          <input type="url" name="music-urls" required>
+          <button type="button" id="add-music-url">Add different  URL</button>
+        </div>
+
+
+        <label for="artist-description">Why this artiest is added ?</label>
+        <textarea id="artist-description" name="artist-description" required></textarea>
+
+        <input type="submit" value="Request Artist">
+      </form>
+    </main>
+
+    <!-- Newsletter Sign up Form -->
+    <footer>
+        <form id="newsletter-form" action="https://httpbin.org/post" method="POST">
+          <div class="newsletter-wrapper">
+            <label for="email">Newsletter Subscription:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Valid email address must be entered.">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <p class="copyright-text">
+            © 2024 VIBE FLOW. All rights are reserved by their respective owners. I do not own any content on this page.
+        </p>
+    </footer>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
